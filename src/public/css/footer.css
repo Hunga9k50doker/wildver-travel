@@ -1,0 +1,61 @@
+.footer {
+  position: relative;
+  margin: 10rem auto;
+  color: #fff; }
+  .footer::after {
+    content: "";
+    position: absolute;
+    top: -4rem;
+    left: 2rem;
+    right: 2rem;
+    height: 2px;
+    background: #ff6b00; }
+  .footer__brand {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 12rem; }
+    .footer__brand h2 {
+      font-size: 4rem;
+      letter-spacing: 4px;
+      margin-bottom: 6rem;
+      margin-top: 0;
+      line-height: 100%; }
+    .footer__brand h3, .footer__brand p {
+      font-size: 1.6rem; }
+    .footer__brand h3 {
+      font-family: "Hina Mincho",sans-serif;
+      font-weight: 100;
+      max-width: 90%;
+      line-height: 120%; }
+  .footer__title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 6rem;
+    font-family: "Hina Mincho",sans-serif;
+    line-height: 100%; }
+  .footer__list {
+    list-style: none;
+    padding: 0; }
+    .footer__list-item {
+      padding: 1rem 0;
+      font-size: 2rem; }
+      .footer__list-item:first-child {
+        margin-top: 0; }
+      .footer__list-item:hover a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: #ff6b00;
+        transform: scaleX(1.1);
+        transition: transform 0.3s ease; }
+    .footer__list .active a {
+      color: #ff6b00;
+      transform: scaleX(1); }
+    .footer__list .active li:hover a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      transform: scaleX(1);
+      transition: transform 0.3s ease; }

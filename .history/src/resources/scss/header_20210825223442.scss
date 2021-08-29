@@ -1,0 +1,10 @@
+@import "variables";
+
+.header{
+    
+    background: url(public/img/bgheader.jpg);
+    &-nav{
+        display:flex;
+
+    }
+}

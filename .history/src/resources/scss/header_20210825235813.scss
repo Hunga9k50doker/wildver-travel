@@ -1,0 +1,76 @@
+@import "variables";
+
+.header{
+    position: relative;
+    background: url(/src/public/img/bg2.jpg) ;
+    width: 100%;
+    min-width: 500px;
+    height: 900px;
+    min-height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // z-index: -1;
+    &_nav{
+        display:flex;
+        color: $white-color;
+        padding: 4.6rem 5rem 0 5rem;
+        &-home{
+            flex: 1;
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing:4px;
+            line-height:100%;
+            cursor: pointer;
+        }
+        &-body{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            font-size: 2.4rem;
+            letter-spacing:2px;
+            &-item{
+                color:$white-color;
+                margin:0 1.6rem;
+                transform: scale(1);
+                &:hover{
+                    color: $orange-color;
+                    transform: scale(1.1);
+                    transition:transform 0.3s;
+                }
+            }
+            button{
+                font-size: 2rem;
+                padding:6px 1.2rem;
+                margin-left: 1.6rem;
+                background:transparent;
+                color:$white-color;
+                border-color: $white-color;
+                border-style: solid 2px;
+                cursor: pointer;
+                box-shadow: 0 4px 5px 1px rgba(0,0,0,0.5);
+                transform: translateY(0);
+                transition:transform 0.3s linear;
+                &:hover{
+                    background: $orange-color;
+                    box-shadow: 0 0px 5px 1px rgba(0,0,0,0.5);
+                    transform: translateY(4px);
+                    transition:transform 0.3s linear;
+                }
+            }
+        }
+
+    }
+
+    &_contain{
+        position: relative;
+        font-size: 1rem;
+        left: 0;
+        top: 50%;
+        transform: translateY(-70%);
+        &-follow{
+            font-size: 2rem;
+            f
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import "variables";
+
+.footer{
+    text-align: center;
+    &__brand{
+        font-size: 2rem;
+        color: $white-color;
+
+    }
+    &__title{
+
+    }
+
+}

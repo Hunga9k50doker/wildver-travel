@@ -1,0 +1,85 @@
+@import "variables";
+
+.footer{
+    position: relative;
+    margin: 10rem auto;
+    color: $white-color;
+    line-height: 100%;
+    &::after{
+        content: "";
+        position: absolute;
+        top: -4rem;
+        left:2rem;
+        right: 2rem;
+        height:2px;
+        background: $orange-color;
+    }
+   
+    &__brand{
+        display:flex;
+        align-items:flex-start;
+        flex-direction: column;
+        color: $white-color;
+        margin-left: 12rem;
+        h2{
+            font-size: 4rem;
+            letter-spacing:4px;
+            margin-bottom: 6rem ;
+            margin-top: 0;
+        }
+        h3,p{
+            font-size: 1.6rem;
+        }
+        h3{
+            font-family: "Hina Mincho",sans-serif;
+            font-weight: 100;
+            max-width: 90%;
+            line-height: 120%;
+        }
+    }
+    &__title{
+        font-size: 3rem;
+        color: $white-color;
+        margin-bottom: 6rem ;
+        font-family: "Hina Mincho",sans-serif;
+
+    }
+    &__list{
+        list-style: none;
+        padding:0;
+      
+        &-item{
+            padding:1rem 0;
+            font-size: 2rem;
+            &:first-child{
+                margin-top: 0;
+            }
+            &:hover{
+                a{
+                    display:block;
+                    height: 100%;
+                    width: 100%;
+                    color:$orange-color;
+                    transform: scaleX(1.1);
+                    transition: transform 0.3s ease;
+                }
+            }
+        }
+        .active{
+            a{
+                color:$orange-color;
+                transform: scaleX(1);
+            }
+           li:hover{
+               a{
+                display:block;
+                height: 100%;
+                width: 100%;
+                transform: scaleX(1);
+                transition: transform 0.3s ease;
+               }
+           }
+        }
+    }
+
+}

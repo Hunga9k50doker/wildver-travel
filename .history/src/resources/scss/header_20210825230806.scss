@@ -1,0 +1,28 @@
+@import "variables";
+
+.header{
+    position: relative;
+    background: url(/src/public/img/bg2.jpg) ;
+    width: 100%;
+    min-width: 500px;
+    height: 900px;
+    min-height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // z-index: -1;
+    &_nav{
+        display:flex;
+        color: $white-color;
+        padding: 4.6rem 5rem 0 5rem;
+        &-home{
+            flex: 1;
+            font-size: 2.4rem;
+        }
+        &-body{
+            display:flex;
+
+        }
+
+    }
+}

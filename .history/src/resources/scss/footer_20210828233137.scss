@@ -1,0 +1,40 @@
+@import "variables";
+
+.footer{
+    padding: 2rem 0;
+    color: $white-color;
+   
+    &__brand{
+        display:flex;
+        align-items:flex-start;
+        flex-direction: column;
+        max-width:60%;
+        color: $white-color;
+       margin-left: 8rem;
+        h2{
+            font-size: 4rem;
+            letter-spacing:4px;
+            margin-bottom: 8rem ;
+        }
+        h3,p{
+            font-size: 1.6rem;
+        }
+        h3{
+            font-weight: 200;
+        }
+    }
+    &__title{
+        font-size: 3rem;
+        color: $white-color;
+    }
+    &__list{
+        list-style: none;
+        padding:0;
+        &-item{
+            padding:1rem 0;
+            font-size: 4rem;
+
+        }
+    }
+
+}

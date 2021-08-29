@@ -1,0 +1,61 @@
+@import "variables";
+.container{ 
+    position: relative;
+    padding-top: 12rem;
+    background: #000;
+    height: 1000px;
+    &_list{
+        &-item{
+            position: relative;
+            &-title{
+                font-size:16rem;
+                font-weight: 1000;
+                line-height:100%;
+                color: rgba($orange-color,0.2);
+            }
+        
+            &-content{
+                color:$white-color;
+                position: absolute;
+                top: 50%;
+                left:0;
+                bottom: 0;
+                transform: translate(10rem,-50%);
+                max-width: 50%;
+                h3{
+                    position: relative;
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                    word-spacing: 4px;
+                    letter-spacing: 8px;
+                    color: $orange-color;
+                    margin-left: 7rem;
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        top: 50%;
+                        left:-7rem;
+                        transform: translateY(-50%);
+                        width: 6rem;
+                        height:1px;
+                        background: currentColor;
+                    }
+                }
+                h4{
+                    margin: 0;
+                    max-width: 50rem;
+                    line-height:120%;
+                    font-size: 4rem;
+                    word-wrap: break-word;
+                }
+                p{
+                    font-size: 1.6rem;
+                    font-weight:300;
+                    color: $text-color;
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+   
+}

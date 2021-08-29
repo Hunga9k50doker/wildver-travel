@@ -1,0 +1,9 @@
+@import "variables";
+
+.footer{
+    background: $black-color;
+    &__brand{
+        font-size: 2rem;
+    }
+
+}

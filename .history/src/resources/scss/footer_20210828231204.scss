@@ -1,0 +1,11 @@
+@import "variables";
+
+.footer{
+    background: $black-color;
+    padding-top: 100px;
+    
+    &__brand{
+        font-size: 2rem;
+    }
+
+}

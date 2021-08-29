@@ -1,0 +1,9 @@
+@import "variables";
+.container{ 
+    background: #000;
+    height: 1000px;
+    
+    &_content{
+        color:$white-color;
+    }
+}

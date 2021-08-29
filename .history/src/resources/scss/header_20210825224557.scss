@@ -1,0 +1,16 @@
+@import "variables";
+
+.header{
+    position: relative;
+    background: url(/src/public/img/bgheader.jpg) ;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cata;
+    // z-index: -1;
+    &_nav{
+        display:flex;
+        color: $white-color;
+
+    }
+}

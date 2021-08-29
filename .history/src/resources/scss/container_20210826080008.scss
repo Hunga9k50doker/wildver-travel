@@ -1,0 +1,13 @@
+@import "variables";
+.container{ 
+    padding-top: 12rem;
+    background: #000;
+    height: 1000px;
+    &_title{
+        font-size:8rem;
+        color: $orange-color;
+    }
+    &_content{
+        color:$white-color;
+    }
+}

@@ -1,0 +1,13 @@
+@import "variables";
+
+.header{
+    position: relative;
+    background: #000;
+    background: url(/src/public/img/bgheader.jpg) cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    &-nav{
+        display:flex;
+        
+    }
+}

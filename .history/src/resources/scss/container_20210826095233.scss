@@ -1,0 +1,101 @@
+@import "variables";
+.container{ 
+    position: relative;
+    padding-top: 12rem;
+    background: #000;
+    height: 1000px;
+    &_list{
+        &-item{
+            position: relative;
+            &-title{
+                font-size:16rem;
+                font-weight: 1000;
+                line-height:100%;
+                color: rgba($orange-color,0.2);
+            }
+        
+            &-content{
+                color:$white-color;
+                position: absolute;
+                top: 50%;
+                left:0;
+                bottom: 0;
+                transform: translate(10rem,-50%);
+                max-width: 50%;
+                h3{
+                    position: relative;
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                    word-spacing: 4px;
+                    letter-spacing: 8px;
+                    color: $orange-color;
+                    margin-left: 7rem;
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        top: 50%;
+                        left:-7rem;
+                        transform: translateY(-50%);
+                        width: 6rem;
+                        height:1px;
+                        background: currentColor;
+                    }
+                }
+                h4{
+                    max-width: 50rem;
+                    line-height:120%;
+                    font-size: 4rem;
+                    word-wrap: break-word;
+                    margin-bottom: 2rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                    font-weight:200;
+                    color: $text-color;
+                    line-height: 120%;
+                    letter-spacing: 1px;
+                }
+                a{
+                    position: relative;
+                    color: $orange-color;
+                    display: flex;
+                    align-items:center;
+                    justify-content: flex-start;
+                    font-size: 1.8rem;
+                    max-width:12rem;
+                    i{
+                        display: block;
+                        align-items:center;
+                        margin-left: 1.4rem;
+                        font-size: 1.6rem;
+                    }
+                    &:hover{
+                        color:$white-color;
+                        &:after{
+                        transform:scaleX(1);
+                        background: $orange-color;
+                        transform-origin: left center;
+                        transition: transform 0.3s linear;
+                        }
+                    }
+                    &:after{
+                        content:" ";
+                        position: absolute;
+                        top: -8px;
+                        left: -8px;
+                        bottom: -8px;
+                        right: 0;
+                        z-index: -1;
+                        border-radius: 4px;
+                        background: $orange-color;
+                        transform:scaleX(0);
+                        transform-origin: left center;
+                        transition: transform 0.3s linear;
+                    }
+                }
+            }
+            
+        }
+    }
+   
+}

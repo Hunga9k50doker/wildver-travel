@@ -1,0 +1,12 @@
+@import "variables";
+.container{ 
+    background: #000;
+    height: 1000px;
+    h2{
+        font-size:4rem;
+        color: $or;
+    }
+    &_content{
+        color:$white-color;
+    }
+}

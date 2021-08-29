@@ -1,0 +1,169 @@
+@import "variables";
+
+.header{
+    position: relative;
+    background: url(/src/public/img/bg2.jpg) ;
+    width: 100%;
+    min-width: 500px;
+    height: 900px;
+    min-height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // z-index: -1;
+    &_nav{
+        display:flex;
+        color: $white-color;
+        padding: 4.6rem 5rem 0 5rem;
+        &-home{
+            flex: 1;
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing:4px;
+            line-height:100%;
+            cursor: pointer;
+        }
+        &-body{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            font-size: 2.4rem;
+            letter-spacing:2px;
+            &-item{
+                color:$white-color;
+                margin:0 1.6rem;
+                transform: scale(1);
+                &:hover{
+                    color: $orange-color;
+                    transform: scale(1.1);
+                    transition:transform 0.3s;
+                }
+            }
+            button{
+                font-size: 2rem;
+                padding:6px 1.2rem;
+                margin-left: 1.6rem;
+                background:transparent;
+                color:$white-color;
+                border-color: $white-color;
+                border-style: solid 2px;
+                cursor: pointer;
+                box-shadow: 0 4px 5px 1px rgba(0,0,0,0.5);
+                transform: translateY(0);
+                transition:transform 0.3s linear;
+                &:hover{
+                    background: $orange-color;
+                    box-shadow: 0 0px 5px 1px rgba(0,0,0,0.5);
+                    transform: translateY(4px);
+                    transition:transform 0.3s linear;
+                }
+            }
+        }
+
+    }
+
+    &_contain{
+        position: relative;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        left: 0;
+        top: 30%;
+        transform: translateY(-70%);
+        &-follow{
+            position: absolute;
+            top: 0;
+            left:0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            color:$white-color;
+            transform:rotate(90deg);
+            margin:0;
+            a:nth-child(2){
+                margin:0 16px;
+            }
+            a{
+                font-size: 3rem;
+                transform: scale(1);
+                transition: transform 0.3s;
+                cursor: pointer;
+                &:hover{
+                     color:$orange-color;
+                     transform: scale(1.1);
+                     transition: transform 0.3s;
+                 }
+            }
+        }
+        &-content{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-size: 2rem;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            &-title{
+                position: relative;
+                font-size: 2.2rem;
+                color: $black-color;
+                word-spacing: 4px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                &:after{
+                    content: " ";
+                    position: absolute;
+                    width:6rem;
+                    height:2px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -8.4rem;
+                    background: #000;
+            
+                }
+                &::before{
+                    content: " ";
+                    position: absolute;
+                    width:6rem;
+                    height:2px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -8.4rem;
+                    background: #000;
+            
+                }
+            }
+            h2{
+                font-size:6rem;
+                &:nth-child(2){
+                    margin-top: 4rem;
+                }
+                &:nth-child(3){
+                    margin-top:2rem;
+                }
+            }
+            button{
+               padding:2rem 6rem;
+               font-family: 'Besley', serif;
+               font-weight: 500;
+               background: $orange-color;
+               color:$white-color;
+               border: none;
+               border-radius: 2px;
+               box-shadow: 0 4px 5px 1px rgba(0,0,0,0.5);
+               cursor: pointer;
+               transform:translateY(0);
+               transition: transform 0.3s;
+               &:hover{
+                    box-shadow: 0 0 5px 1px rgba(255,255,255,0.5);
+                    transform:translateY(4px);
+                    transition: transform 0.3s;
+               }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@import "variables";
+.container{ 
+    position: relative;
+    padding-top: 12rem;
+    background: #000;
+    box-shadow: 40px 0 20px 1px rgba(0,0,0,1);
+    
+    &_list{
+
+        &-item{
+            position: relative;
+            margin:20rem 0;
+            .col{
+                position: relative;
+                p{
+                    font-size: 1.8rem;
+                    font-weight:200;
+                    color: $text-color;
+                    line-height: 120%;
+                    letter-spacing: 1px;
+                    margin: 4.5rem 0;
+                }
+                .container_list-item-text{
+                    margin-top: 6rem;
+                }
+            }
+            &-number{
+                font-size:16rem;
+                font-weight: 1000;
+                line-height:100%;
+                color: rgba($orange-color,0.2);
+            }
+        
+            &-content{
+                color:$white-color;
+                position: absolute;
+                top: 50%;
+                left:0;
+                bottom: -20%;
+                transform: translate(10rem,-50%);
+                max-width: 60%;
+                h3{
+                    position: relative;
+                    display:flex;
+                    align-items:center;
+                    font-size: 1.6rem;
+                    text-transform: uppercase;
+                    word-spacing: 4px;
+                    letter-spacing: 4px;
+                    line-height:120%;
+                    color: $orange-color;
+                    margin:2rem 0 4rem 7rem;
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        top: 50%;
+                        left:-7rem;
+                        transform: translateY(-50%);
+                        width: 6rem;
+                        height:1px;
+                        background: currentColor;
+                    }
+                }
+                &-title{
+                    max-width: 50rem;
+                    line-height:120%;
+                    font-size: 4rem;
+                    margin:0 ;
+                    letter-spacing: 4px;
+                }
+              
+                a{
+                    position: relative;
+                    color: $orange-color;
+                    display: flex;
+                    align-items:center;
+                    justify-content: flex-start;
+                    font-size: 1.8rem;
+                    max-width:12rem;
+                    i{
+                        display: block;
+                        align-items:center;
+                        margin-left: 1.4rem;
+                        font-size: 1.6rem;
+                    }
+                    &:hover{
+                        color:$white-color;
+                        &:after{
+                        transform:scaleX(1);
+                        background: $orange-color;
+                        transform-origin: left center;
+                        transition: transform 0.3s linear;
+                        }
+                    }
+                    &:after{
+                        content:" ";
+                        position: absolute;
+                        top: -8px;
+                        left: -8px;
+                        bottom: -8px;
+                        right: 0;
+                        z-index: -1;
+                        border-radius: 4px;
+                        background: $orange-color;
+                        transform:scaleX(0);
+                        transform-origin: left center;
+                        transition: transform 0.3s linear;
+                    }
+                }
+            }
+            &-img{
+                position: relative;
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                perspective: 600px;
+                &-singe{
+                    position: absolute;
+                    z-index: 0;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height:100%;
+                    &:nth-of-type(3n+3){
+                        position: absolute;
+                        z-index: 5;
+                    }
+                }
+                source,img{
+                    background-size: cover;
+                    width: 100%;
+                    height: 52rem;
+                    // box-shadow: 1px 1px 10   px rgba(255,255,255,0.5);
+                }
+            }
+        }
+    }
+   
+}

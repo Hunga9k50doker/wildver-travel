@@ -1,0 +1,32 @@
+@import "variables";
+
+.footer{
+    text-align: center;
+    padding: 2rem 0;
+    color: $white-color;
+    h3,p{
+        font-size: 1rem;
+    }
+    &__brand{
+        align-items: center;
+        font-size: 4rem;
+        color: $white-color;
+        letter-spacing:4px;
+     
+
+    }
+    &__title{
+        font-size: 3rem;
+        color: $white-color;
+    }
+    &__list{
+        list-style: none;
+        padding:0;
+        &-item{
+            padding:1rem 0;
+            font-size: 4rem;
+
+        }
+    }
+
+}

@@ -1,0 +1,18 @@
+@import "variables";
+
+.header{
+    position: relative;
+    background: url(/src/public/img/bgheader.jpg) ;
+    width: 100%;
+    height:auto;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // z-index: -1;
+    &_nav{
+        display:flex;
+        color: $white-color;
+
+    }
+}

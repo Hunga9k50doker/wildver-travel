@@ -1,0 +1,9 @@
+@import "variables";
+
+.header{
+    background: url(/src/public/);
+    &-nav{
+        display:flex;
+
+    }
+}
