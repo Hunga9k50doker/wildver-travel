@@ -1,0 +1,47 @@
+
+/* low pc: min:1024px  max:1400px*/
+@media (min-width: 1024px) and (max-width:1400px){
+
+    /* container */
+    .container_list-item-mostPlacesImg{
+        grid-template-rows: repeat(8,7rem);
+        grid-gap: 1rem 2rem;
+    }
+    .container_list-item-mostPlacesImg img{
+        width:22rem;
+        height:30rem;
+    }
+}
+
+/* tablet and mobile: max-with: 1023px */
+
+@media (max-width: 1023px){
+    html{
+        font-size: 50%;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+    }
+
+    /* container */
+    .container_list-item-img{
+        object-fit:cover;
+        width: auto;
+        height:auto;
+        position: relative;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .container_list-item-content{
+        width: 90;
+    }
+}
+/* tablet : min-width: 740px */
+@media (min-width: 740px) and (max-width: 1023px){
+    
+}
+/*  mobile: max-width: 739px */
+@media (max-width: 1023px){
+    
+}

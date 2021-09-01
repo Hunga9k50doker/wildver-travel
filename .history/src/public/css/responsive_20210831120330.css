@@ -1,0 +1,10 @@
+
+/* low pc: min:1024px  max:1400px*/
+@media (min-width: 1024px) and (max-width:1400px){
+
+    /* container */
+    .container_list-item-mostPlacesImg img{
+        width:20rem;
+        
+    }
+}

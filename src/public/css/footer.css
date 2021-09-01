@@ -46,7 +46,6 @@
       .footer__list-item:hover a {
         display: block;
         height: 100%;
-        width: 100%;
         color: #ff6b00;
         transform: scaleX(1.1);
         transition: transform 0.3s ease; }

@@ -22,7 +22,7 @@
       font-weight: 1000;
       line-height: 100%;
       color: rgba(255, 107, 0, 0.2); }
-    .container_list-item:nth-of-type(2n+2) .container_list-item-img {
+    .container_list-item:nth-of-type(2n) .container_list-item-img {
       margin-right: 5rem; }
     .container_list-item-content {
       color: #fff;
@@ -180,13 +180,19 @@
       .container_list-item-places h4, .container_list-item-places p {
         max-width: 90%; }
     .container_list-item-mostPlacesImg {
+      position: relative;
+      top: -20rem;
+      left: 50%;
+      transform: translate(-50%, 0);
       display: grid;
       grid-template-columns: auto auto auto auto;
       grid-template-rows: repeat(8, 10rem);
       grid-gap: 1rem 4rem; }
       .container_list-item-mostPlacesImg img {
+        width: auto;
         max-height: 40rem;
-        max-width: 40rem; }
+        max-width: 30rem;
+        object-fit: cover; }
         .container_list-item-mostPlacesImg img:nth-child(1) {
           grid-column-start: 1;
           grid-column-end: 2;
